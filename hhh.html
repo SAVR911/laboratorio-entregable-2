@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Funciones matematicas
+        function sumar(a,b) {
+            return a+b;
+        }
+        function restar(a,b){
+            return a-b;
+        }
+        function multiplicar(a,b){
+            return a*b;
+        }
+        function division(a,b){
+            return a/b;
+        }
+        let numero1 = parseFloat(prompt("Ingrese el primer valor: "));
+            let numero2 = parseFloat(prompt("Ingrese el segundo valor: "));
+            let operacion = prompt("Que operacion desea realizar? (sumar,restar,multiplicar,dividir)");
+            let Resultado = calculadora(numero1,numero2,operacion);
+            document.write("El resultado es: ",Resultado);
+
+        //Funcion calculadora
+        function calculadora (n1,n2,operacion){
+            switch(operacion){
+                case 'sumar':
+                    return sumar(n1,n2);
+                    break;
+                    case 'restar':
+                        return restar(n1,n2);
+                        break;
+                        case 'multiplicar':
+                            return multiplicar(n1,n2);
+                            break;
+                             case 'dividir':
+                             return dividir(n1,n2);
+                             break;
+            }
+        }
+    </script>
+</body>
+</html>
